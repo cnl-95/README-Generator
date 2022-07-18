@@ -69,7 +69,7 @@ function writeToFile(fileName, data) {
         
         if (err) throw err;
         
-        console.log('Successfully generated/wrote over README.md in the dist folder');
+        console.log('README was a success!');
     });
 };
 
@@ -87,5 +87,5 @@ function init() {
   })
 };
 
-// Function call to initialize app
+
 init();
