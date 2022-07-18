@@ -18,16 +18,26 @@ function renderLicenseBadge(license) {
         return '';
     }
   }
-  // TODO: Create a function that returns the license link
-  //  function to render the license link based on the selected license to post to the README
-
+// TODO: Create a function that returns the license link
+//  function to render the license link based on the selected license to post to the README
+function renderLicenseLink(license) {
     // switch statement to render the link based on the selected license
-
+    switch (license) {
       // name of the license
-   
+      case 'MIT':
         // returns the link to the license
-     
+        return 'https://opensource.org/licenses/MIT';
+        case 'Apache':
+        return 'https://opensource.org/licenses/Apache-2.0';
+        case 'GPL':
+          return 'https://www.gnu.org/licenses/gpl-3.0';
+          case 'BSD':
+            return 'https://opensource.org/licenses/BSD-3-Clause';
+      default:
         // If there is no license, return an empty string
+        return '';
+    }
+  }
   
   // TODO: Create a function that returns the license section of README
   //  function to render the license section and link based on the selected license to post to the README
